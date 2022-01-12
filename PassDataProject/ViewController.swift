@@ -19,7 +19,10 @@ class ViewController: UIViewController {
     @IBAction func loginTapped(_ sender: UIButton) {
 
             performSegue(withIdentifier: "detailSegue", sender: nil)
-      
+    }
+    
+    @IBAction func unwindSegueToMainScreen(segue: UIStoryboardSegue) {
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -126,6 +126,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="goBackTapped:" destination="saX-k3-XTa" eventType="touchUpInside" id="ljF-pi-Gkr"/>
+                                    <segue destination="lPx-T0-shg" kind="unwind" unwindAction="unwindSegueToMainScreenWithSegue:" id="Mim-Ij-LaA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -158,6 +159,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMC-nk-1WC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="lPx-T0-shg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="860.86956521739137" y="53.571428571428569"/>
         </scene>
