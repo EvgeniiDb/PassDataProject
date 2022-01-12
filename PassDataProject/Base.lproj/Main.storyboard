@@ -50,6 +50,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWu-G3-nUV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -79,6 +82,11 @@
                             </constraint>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginTF" destination="YPr-mr-4Py" id="4bg-j6-PdD"/>
+                        <outlet property="passwordTF" destination="TlN-Ri-te4" id="r9W-3g-olF"/>
+                        <segue destination="saX-k3-XTa" kind="show" identifier="detailSegue" id="kpK-By-hsn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,17 +100,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHi-Hn-RIA">
-                                <rect key="frame" x="144" y="137" width="126" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHi-Hn-RIA">
+                                <rect key="frame" x="107" y="117" width="200" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="U6R-fT-LqJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syp-BW-0pw">
-                                <rect key="frame" x="144" y="396" width="126" height="37"/>
+                                <rect key="frame" x="144" y="351.5" width="126" height="37"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="9Bx-hK-91x">
@@ -132,19 +140,16 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="100"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="340"/>
                             </constraint>
-                            <constraint firstItem="YHi-Hn-RIA" firstAttribute="top" secondItem="PBZ-eC-ixZ" secondAttribute="top" constant="93" id="CMx-aB-vjw">
+                            <constraint firstItem="YHi-Hn-RIA" firstAttribute="top" secondItem="PBZ-eC-ixZ" secondAttribute="top" constant="73" id="CMx-aB-vjw">
                                 <variation key="heightClass=compact-widthClass=compact" constant="55"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="35"/>
                             </constraint>
-                            <constraint firstItem="YHi-Hn-RIA" firstAttribute="leading" secondItem="Syp-BW-0pw" secondAttribute="leading" id="GBQ-Uy-bhv"/>
-                            <constraint firstItem="PBZ-eC-ixZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YHi-Hn-RIA" secondAttribute="trailing" constant="144" id="H25-V3-ss9">
+                            <constraint firstItem="YHi-Hn-RIA" firstAttribute="leading" secondItem="Syp-BW-0pw" secondAttribute="leading" constant="-37" id="GBQ-Uy-bhv"/>
+                            <constraint firstItem="PBZ-eC-ixZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YHi-Hn-RIA" secondAttribute="trailing" constant="107" id="H25-V3-ss9">
                                 <variation key="heightClass=compact-widthClass=compact" constant="50"/>
                             </constraint>
-                            <constraint firstItem="YHi-Hn-RIA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PBZ-eC-ixZ" secondAttribute="leading" constant="144" id="Pnp-Od-Pmg"/>
-                            <constraint firstItem="Syp-BW-0pw" firstAttribute="top" secondItem="YHi-Hn-RIA" secondAttribute="bottom" constant="217" id="mU1-Mb-LUw">
-                                <variation key="heightClass=compact-widthClass=compact" constant="130"/>
-                                <variation key="heightClass=compact-widthClass=regular" constant="120"/>
-                            </constraint>
+                            <constraint firstItem="YHi-Hn-RIA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PBZ-eC-ixZ" secondAttribute="leading" constant="107" id="Pnp-Od-Pmg"/>
+                            <constraint firstItem="Syp-BW-0pw" firstAttribute="top" secondItem="YHi-Hn-RIA" secondAttribute="bottom" constant="202" id="UI9-52-rMY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i0G-0U-5Xv"/>
