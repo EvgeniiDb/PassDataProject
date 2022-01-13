@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var passwordTF: UITextField!
     
+    @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func loginTapped(_ sender: UIButton) {
 
@@ -22,7 +23,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwindSegueToMainScreen(segue: UIStoryboardSegue) {
-        
+        guard segue.identifier == "unwindSegue" else { return }
+        guard let svc = segue.source as? SecondViewController else { return }
+        self.resultLabel.text = svc.label.text
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

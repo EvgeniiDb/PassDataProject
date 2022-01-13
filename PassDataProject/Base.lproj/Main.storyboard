@@ -54,6 +54,13 @@
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWu-G3-nUV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOe-6P-SlY">
+                                <rect key="frame" x="142" y="501" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
@@ -85,6 +92,7 @@
                     <connections>
                         <outlet property="loginTF" destination="YPr-mr-4Py" id="4bg-j6-PdD"/>
                         <outlet property="passwordTF" destination="TlN-Ri-te4" id="r9W-3g-olF"/>
+                        <outlet property="resultLabel" destination="rOe-6P-SlY" id="u0S-fh-0k9"/>
                         <segue destination="saX-k3-XTa" kind="show" identifier="detailSegue" id="kpK-By-hsn"/>
                     </connections>
                 </viewController>
@@ -117,7 +125,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="goBackTapped:" destination="saX-k3-XTa" eventType="touchUpInside" id="ljF-pi-Gkr"/>
-                                    <segue destination="lPx-T0-shg" kind="unwind" unwindAction="unwindSegueToMainScreenWithSegue:" id="Mim-Ij-LaA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHi-Hn-RIA">
@@ -156,6 +163,7 @@
                     <navigationItem key="navigationItem" id="i0G-0U-5Xv"/>
                     <connections>
                         <outlet property="label" destination="YHi-Hn-RIA" id="iYk-bA-6Op"/>
+                        <segue destination="lPx-T0-shg" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToMainScreenWithSegue:" id="fih-Kh-4z1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMC-nk-1WC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
