@@ -40,9 +40,10 @@
                                 <variation key="heightClass=compact-widthClass=regular" spacing="15"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nF-3o-9fU">
-                                <rect key="frame" x="149" y="375" width="110" height="46"/>
+                                <rect key="frame" x="152" y="375" width="110" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="KWg-40-e0N"/>
                                     <constraint firstAttribute="height" constant="46" id="bu4-L6-qGe"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -54,9 +55,8 @@
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWu-G3-nUV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOe-6P-SlY">
-                                <rect key="frame" x="142" y="501" width="125" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOe-6P-SlY">
+                                <rect key="frame" x="207" y="446" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,13 +72,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zB0-GJ-1OG" secondAttribute="trailing" constant="73" id="3h7-UQ-xfx">
                                 <variation key="heightClass=compact-widthClass=regular" constant="173"/>
                             </constraint>
-                            <constraint firstItem="6nF-3o-9fU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="4P3-qn-bch">
-                                <variation key="heightClass=compact-widthClass=regular" constant="49"/>
-                            </constraint>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6nF-3o-9fU" secondAttribute="trailing" constant="155" id="8b8-ed-DGD">
-                                <variation key="heightClass=compact-widthClass=regular" constant="55"/>
-                            </constraint>
                             <constraint firstItem="zB0-GJ-1OG" firstAttribute="top" secondItem="EaB-d6-oBI" secondAttribute="bottom" constant="43" id="D4L-th-0C3"/>
+                            <constraint firstItem="rOe-6P-SlY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GGd-ro-DA6"/>
                             <constraint firstItem="6nF-3o-9fU" firstAttribute="top" secondItem="zB0-GJ-1OG" secondAttribute="bottom" constant="83" id="U48-i4-zNr">
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
@@ -87,6 +82,9 @@
                             <constraint firstItem="zB0-GJ-1OG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="WHp-c0-1FH">
                                 <variation key="heightClass=compact-widthClass=regular" constant="173"/>
                             </constraint>
+                            <constraint firstItem="rOe-6P-SlY" firstAttribute="top" secondItem="6nF-3o-9fU" secondAttribute="bottom" constant="25" id="kIt-7A-cPD"/>
+                            <constraint firstItem="6nF-3o-9fU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mDu-PZ-Z99"/>
+                            <constraint firstItem="zB0-GJ-1OG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ugM-NE-i9I"/>
                         </constraints>
                     </view>
                     <connections>
@@ -109,10 +107,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syp-BW-0pw">
-                                <rect key="frame" x="144" y="307" width="126" height="37"/>
+                                <rect key="frame" x="144" y="269.5" width="126" height="37"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="9Bx-hK-91x">
+                                    <constraint firstAttribute="width" constant="126" id="9Bx-hK-91x">
                                         <variation key="heightClass=compact-widthClass=compact" constant="126"/>
                                         <variation key="heightClass=compact-widthClass=regular" constant="126"/>
                                         <variation key="heightClass=regular-widthClass=regular" constant="126"/>
@@ -130,7 +128,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHi-Hn-RIA">
                                 <rect key="frame" x="144" y="117" width="126" height="32.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="U6R-fT-LqJ"/>
+                                    <constraint firstAttribute="width" constant="126" id="U6R-fT-LqJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -140,24 +138,17 @@
                         <viewLayoutGuide key="safeArea" id="PBZ-eC-ixZ"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Syp-BW-0pw" firstAttribute="leading" secondItem="PBZ-eC-ixZ" secondAttribute="leading" constant="144" id="3Zz-Ac-gWs">
-                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
-                                <variation key="heightClass=compact-widthClass=regular" constant="340"/>
-                            </constraint>
-                            <constraint firstItem="PBZ-eC-ixZ" firstAttribute="trailing" secondItem="Syp-BW-0pw" secondAttribute="trailing" constant="144" id="5UP-s5-eJo">
-                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
-                                <variation key="heightClass=compact-widthClass=regular" constant="340"/>
-                            </constraint>
                             <constraint firstItem="YHi-Hn-RIA" firstAttribute="top" secondItem="PBZ-eC-ixZ" secondAttribute="top" constant="73" id="CMx-aB-vjw">
                                 <variation key="heightClass=compact-widthClass=compact" constant="55"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="35"/>
                             </constraint>
+                            <constraint firstItem="Syp-BW-0pw" firstAttribute="centerX" secondItem="PBZ-eC-ixZ" secondAttribute="centerX" id="DtI-Jb-Rzj"/>
                             <constraint firstItem="YHi-Hn-RIA" firstAttribute="leading" secondItem="Syp-BW-0pw" secondAttribute="leading" id="GBQ-Uy-bhv"/>
-                            <constraint firstItem="PBZ-eC-ixZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YHi-Hn-RIA" secondAttribute="trailing" constant="107" id="H25-V3-ss9">
+                            <constraint firstItem="PBZ-eC-ixZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YHi-Hn-RIA" secondAttribute="trailing" constant="80" id="H25-V3-ss9">
                                 <variation key="heightClass=compact-widthClass=compact" constant="50"/>
                             </constraint>
-                            <constraint firstItem="YHi-Hn-RIA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PBZ-eC-ixZ" secondAttribute="leading" constant="107" id="Pnp-Od-Pmg"/>
-                            <constraint firstItem="Syp-BW-0pw" firstAttribute="top" secondItem="YHi-Hn-RIA" secondAttribute="bottom" constant="157.5" id="UI9-52-rMY"/>
+                            <constraint firstItem="YHi-Hn-RIA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PBZ-eC-ixZ" secondAttribute="leading" constant="80" id="Pnp-Od-Pmg"/>
+                            <constraint firstItem="Syp-BW-0pw" firstAttribute="top" secondItem="YHi-Hn-RIA" secondAttribute="bottom" constant="120" id="UI9-52-rMY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i0G-0U-5Xv"/>
